@@ -20,7 +20,7 @@ public class TrialServlet1 extends HttpServlet {
 
         String tempS="";
         tempS = tempS + "<html><body><center><h1>trial1</h1></center>";
-        //tempS = tempS + "<br>" + testRecipeServerName();
+        tempS = tempS + "<br>" + testRecipeServerName();
         tempS = tempS + "</body></html>";
 
 	    try {
@@ -35,8 +35,8 @@ public class TrialServlet1 extends HttpServlet {
     private String testRecipeServerName() {
         String serverEnv = "";
         serverEnv += System.getProperty("wlp.server.name");
-        serverEnv += " / ";
-        serverEnv += System.getProperty("wlp.server.name");
+        //serverEnv += " / ";
+        //serverEnv += System.getProperty("wlp.server.name");
         return serverEnv;
     }
 
