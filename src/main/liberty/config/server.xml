@@ -15,4 +15,6 @@
     <!-- Default SSL configuration enables trust for default certificates from the Java runtime --> 
     <ssl id="defaultSSLConfig" trustDefaultCerts="true" />
 
+    <webApplication contextRoot="/" location="${server.config.dir}/apps/wcaLargeApp.war" name="wcaLargeApp"/>
+
 </server>
