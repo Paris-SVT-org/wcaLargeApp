@@ -21,7 +21,7 @@ public class TrialServletZ extends HttpServlet {
 
         String tempS="";
         tempS = tempS + "<html><body><center><h1>trialZ</h1></center>";
-        //tempS = tempS + "<br>" + testRecipeServerName();
+        tempS = tempS + "<br>" + testRecipeServerName();
         tempS = tempS + "</body></html>";
 
 	    try {
@@ -36,8 +36,8 @@ public class TrialServletZ extends HttpServlet {
     private String testRecipeServerName() {
         String serverEnv = "";
         serverEnv += com.ibm.websphere.runtime.ServerName.getDisplayName();
-        serverEnv += " / ";
-        serverEnv += com.ibm.websphere.runtime.ServerName.getFullName();
+        //serverEnv += " / ";
+        //serverEnv += com.ibm.websphere.runtime.ServerName.getFullName();
         return serverEnv;
     }
 
